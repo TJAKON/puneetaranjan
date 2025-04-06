@@ -92,7 +92,7 @@ export default function Home() {
           <p className="text-sm text-gray-700 mb-4">
             These workshops are tangible and real ways to experience the power
             of creation, to bring out collective intelligence—so sought after in
-            today&apos;s professions.
+            today professions.
           </p>
           <Link href="/workshops" className="text-yellow-700 underline">
             Learn More
