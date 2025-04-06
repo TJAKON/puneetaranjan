@@ -38,8 +38,8 @@ export default function Home() {
             A story of resilience...
             <br />
             The strength that lies within each of us.
-            <br />
-            A transformation followed by a meeting can open doors to an infinite world.
+            <br />A transformation followed by a meeting can open doors to an
+            infinite world.
           </p>
           <Link
             href="/about"
@@ -90,8 +90,9 @@ export default function Home() {
         <div>
           <h2 className="text-2xl font-light mb-4">Youth Workshops</h2>
           <p className="text-sm text-gray-700 mb-4">
-            These workshops are tangible and real ways to experience the power of creation,
-            to bring out collective intelligence—so sought after in today's professions.
+            These workshops are tangible and real ways to experience the power
+            of creation, to bring out collective intelligence—so sought after in
+            today&apos;s professions.
           </p>
           <Link href="/workshops" className="text-yellow-700 underline">
             Learn More
