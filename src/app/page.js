@@ -79,9 +79,11 @@ export default function Home() {
       <section className="grid grid-cols-1 md:grid-cols-2 gap-10 px-6 py-16 bg-white text-neutral-900 max-w-7xl mx-auto">
         {/* Commission Section */}
         <div className="flex flex-col items-start text-left">
-          <img
+          <Image
             src="/art4.jpg" // Replace with your actual image path
             alt="Commission Art"
+            width={600}
+            height={0}
             className="w-full h-[450px] shadow-lg mb-4"
           />
           <h3 className="text-2xl font-semibold mb-2">Request a Commission</h3>
@@ -97,9 +99,11 @@ export default function Home() {
 
         {/* New Work Section */}
         <div className="flex flex-col items-start text-left">
-          <img
+          <Image
             src="/art2.jpg" // Replace with your actual image path
             alt="Hydrangeas Art"
+            width={600}
+            height={0}
             className="w-full h-[450px] shadow-lg mb-4"
           />
           <h3 className="text-2xl font-semibold mb-2">
@@ -116,9 +120,11 @@ export default function Home() {
         </div>
         {/* Art Workshop Section */}
         <div className="flex flex-col items-start text-left">
-          <img
+          <Image
             src="/art5.jpg" // Replace with your actual image
             alt="Art Workshop"
+            width={600}
+            height={0}
             className="w-full h-[450px] shadow-lg mb-4"
           />
           <h3 className="text-2xl font-semibold mb-2">Join Our Art Workshop</h3>
@@ -134,9 +140,11 @@ export default function Home() {
 
         {/* Featured Collection Section */}
         <div className="flex flex-col items-start text-left">
-          <img
+          <Image
             src="/art3.jpg" // Replace with your actual image
             alt="Nature Collection"
+            width={600}
+            height={0}
             className="w-full h-[450px] shadow-lg mb-4"
           />
           <h3 className="text-2xl font-semibold mb-2">
@@ -277,6 +285,8 @@ export default function Home() {
               src="/art4.jpg"
               alt="Creative Youth Workshop"
               fill
+              // width={600}
+              height={0}
               className="object-cover hover:scale-105 transition-transform duration-500"
             />
             {/* Artistic overlay stroke */}
