@@ -107,7 +107,7 @@ export default function Home() {
             className="w-full h-[450px] shadow-lg mb-4"
           />
           <h3 className="text-2xl font-semibold mb-2">
-            New Work - "Hydrangeas"
+            New Work - Hydrangeas
           </h3>
           <p className="text-base mb-4">
             I have new watercolor hydrangea prints for sale. Click the link to
