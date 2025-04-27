@@ -14,7 +14,13 @@ import {
   PopoverGroup,
   PopoverPanel,
 } from "@headlessui/react";
-import { FaClosedCaptioning, FaInstagram, FaPinterestP, FaStore, FaWindowClose } from "react-icons/fa";
+import {
+  FaClosedCaptioning,
+  FaInstagram,
+  FaPinterestP,
+  FaStore,
+  FaWindowClose,
+} from "react-icons/fa";
 import { Bars3Icon } from "@heroicons/react/24/outline";
 import {
   ChevronDownIcon,
@@ -23,11 +29,11 @@ import {
 import { Instagram } from "lucide-react";
 
 const navigation = [
-  { name: "BLOGS", href: "/Blog", current: false },
-  { name: "ART COMMISSION", href: "/artcommission", current: false },
-  { name: "FAQS", href: "#testimonials", current: false },
-  { name: "About", href: "/about", current: false },
-  { name: "Contact us", href: "/contact", current: false },
+  { name: "BLOGS", href: "/pages/blog", current: false },
+  { name: "ART COMMISSION", href: "/pages/artCommission", current: false },
+  { name: "FAQS", href: "/pages/faqs", current: false },
+  { name: "About", href: "/pages/about", current: false },
+  { name: "Contact us", href: "/pages/contact", current: false },
 ];
 
 export const Header = () => {
@@ -47,18 +53,17 @@ export const Header = () => {
           </div>
 
           <div className="flex justify-center flex-1">
-            <Image
+            <img
               alt="Logo"
+              href="/"
               src="/logo1.png"
-              width={100}
-              height={0}
               className="w-40 object-cover"
             />
           </div>
 
           <div className="flex items-center gap-6">
             <Link
-              href="/bookyourEvent"
+              href="/pages/store"
               className="text-black text-center text-xl uppercase"
             >
               Store
@@ -88,7 +93,7 @@ export const Header = () => {
           </div>
           <div className="flex items-center gap-6">
             <Link
-              href="/bookyourEvent"
+              href="/pages/store"
               className="text-black/70 text-center text-xl uppercase"
             >
               <FaStore className="w-8 h-8" />
@@ -125,6 +130,7 @@ export const Header = () => {
                 <Link
                   key={item.name}
                   href={item.href}
+                  onClick={() => setMobileMenuOpen(false)}
                   className="py-2 text-black text-xl uppercase"
                 >
                   {item.name}
@@ -143,21 +149,42 @@ export const Header = () => {
         {/* Desktop Navigation (Hidden on Mobile) */}
         <div className="hidden lg:flex justify-center items-center md:py-3">
           <PopoverGroup className="flex justify-center gap-x-8 text-lg font-medium">
-            <Link href={""} className="text-black uppercase">
+            <Link href={"/"} className="text-black uppercase">
               home
             </Link>
 
             <Popover className="relative">
-              <PopoverButton className="flex items-center gap-x-1 text-black focus:outline-none  uppercase">
+              <PopoverButton className="flex items-center gap-x-1 text-black focus:outline-none uppercase">
                 Portfolio
                 <ChevronDownIcon className="h-5 w-5" />
               </PopoverButton>
-              <PopoverPanel
-                transition
-                className="absolute top-12 z-10 mt-3 md:w-[80vh] overflow-hidden rounded-xl bg-black/90 backdrop-blur-lg ring-1 shadow-lg ring-gray-900/5 transition data-closed:translate-y-1 data-closed:opacity-0 data-enter:duration-200 data-enter:ease-out data-leave:duration-150 data-leave:ease-in"
-              >
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-5 px-4 py-4">
-                  {/* Insert portfolio links or items here */}
+
+              <PopoverPanel className="absolute top-8 z-10 mt-3 w-64 overflow-hidden bg-transparent backdrop-blur-sm ring-1 shadow-2xl ring-gray-900/5 transition-all">
+                <div className="flex flex-col gap-3 p-4">
+                  <Link
+                    href="/"
+                    className="text-black hover:text-blue-600 font-medium"
+                  >
+                    Acrylic
+                  </Link>
+                  <Link
+                    href="/"
+                    className="text-black hover:text-blue-600 font-medium"
+                  >
+                    Watercolor
+                  </Link>
+                  <Link
+                    href="/"
+                    className="text-black hover:text-blue-600 font-medium"
+                  >
+                    Gouache
+                  </Link>
+                  <Link
+                    href="/"
+                    className="text-black hover:text-blue-600 font-medium"
+                  >
+                    Drawings
+                  </Link>
                 </div>
               </PopoverPanel>
             </Popover>

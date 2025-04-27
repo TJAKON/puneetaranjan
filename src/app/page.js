@@ -48,14 +48,29 @@ export default function Home() {
           <h2 className="text-3xl font-semibold text-yellow-300 mb-4 tracking-tight">
             Puneeta Ranjan
           </h2>
-          <p className="text-base leading-relaxed text-neutral-200 mb-6 border-l-4 border-yellow-500 pl-4">
-            A story of resilience... <br />
-            The strength that lies within each of us.
-            <br />A transformation followed by a meeting can open doors to an
-            infinite world.
+
+          <p className="text-base leading-relaxed text-neutral-200 mb-4 border-l-4 border-yellow-500 pl-4">
+            Puneeta is a Pune-based artist turning emotions into vibrant
+            masterpieces— and dreams into accessible art education for all. Her
+            works are translations of fleeting moments and profound feelings
+            into a tangible form.
           </p>
+
+          <p className="text-base leading-relaxed text-neutral-200 mb-6 border-l-4 border-yellow-500 pl-4">
+            Puneeta is an expert artist and a Pune-based contemporary painter
+            known for creating emotional, nature-inspired artworks that blend
+            realism and abstraction. Her work reflects personal experiences,
+            music, and poetry.
+            <br />
+            <br />
+            Through her Pune studio, she offers original paintings and prints
+            across India. Aiming to launch a free art school in Pune, a
+            professional art institute, and healing art programs, making art
+            education accessible and transformative for all.
+          </p>
+
           <Link
-            href="/about"
+            href="/pages/about"
             className="inline-flex items-center gap-2 bg-yellow-400 hover:bg-yellow-300 text-black font-medium px-5 py-2 rounded-full shadow-md transition-all duration-300"
           >
             Learn More
@@ -106,9 +121,7 @@ export default function Home() {
             height={0}
             className="w-full h-[450px] shadow-lg mb-4"
           />
-          <h3 className="text-2xl font-semibold mb-2">
-            New Work - Hydrangeas
-          </h3>
+          <h3 className="text-2xl font-semibold mb-2">New Work - Hydrangeas</h3>
           <p className="text-base mb-4">
             I have new watercolor hydrangea prints for sale. Click the link to
             see them!
@@ -300,9 +313,7 @@ export default function Home() {
       {/* Events Section */}
       {/* Events Section */}
       <section className="relative bg-white py-20 px-6 mx-auto overflow-hidden md:mx-10">
-        <h2 className="text-2xl font-light mb-12">
-          Upcoming Events
-        </h2>
+        <h2 className="text-2xl font-light mb-12">Upcoming Events</h2>
 
         {/* Blinking background crosses */}
         <div className="absolute inset-0 -z-10">
