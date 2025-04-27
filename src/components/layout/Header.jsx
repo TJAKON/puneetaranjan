@@ -29,6 +29,13 @@ import {
 import { Instagram } from "lucide-react";
 
 const navigation = [
+  { name: "BLOGS", href: "/pages/blog", current: false },
+  { name: "ART COMMISSION", href: "/pages/artCommission", current: false },
+  { name: "FAQS", href: "/pages/faqs", current: false },
+  { name: "About", href: "/pages/about", current: false },
+  { name: "Contact us", href: "/pages/contact", current: false },
+];
+const navigationMobile = [
   { name: "HOME", href: "/", current: false },
   { name: "BLOGS", href: "/pages/blog", current: false },
   { name: "ART COMMISSION", href: "/pages/artCommission", current: false },
@@ -129,7 +136,7 @@ export const Header = () => {
               </button>
             </div>
             <div className="flex flex-col items-center py-4">
-              {navigation.map((item) => (
+              {navigationMobile.map((item) => (
                 <Link
                   key={item.name}
                   href={item.href}
