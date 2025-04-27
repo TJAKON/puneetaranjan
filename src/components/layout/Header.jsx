@@ -29,6 +29,7 @@ import {
 import { Instagram } from "lucide-react";
 
 const navigation = [
+  { name: "HOME", href: "/", current: false },
   { name: "BLOGS", href: "/pages/blog", current: false },
   { name: "ART COMMISSION", href: "/pages/artCommission", current: false },
   { name: "FAQS", href: "/pages/faqs", current: false },
@@ -85,6 +86,7 @@ export const Header = () => {
           <div className="flex justify-center flex-1">
             <Image
               alt="Logo"
+              href="/"
               src="/logo1.png"
               width={100}
               height={0}
@@ -112,6 +114,7 @@ export const Header = () => {
               <div className="flex justify-center flex-1">
                 <Image
                   alt="Logo"
+                  href="/"
                   src="/logo1.png"
                   width={100}
                   height={0}
