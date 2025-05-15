@@ -40,9 +40,9 @@ function AboutPage() {
         {/* Artist Picture */}
         <div className="flex justify-center mb-12">
           <img
-            src="/images/puneeta.jpeg"
+            src="/images/puneeta2.jpeg"
             alt="Artist Photo"
-            className="max-w-md w-full h-auto object-cover rounded-lg shadow-lg"
+            className="max-w-lg w-full h-auto object-cover shadow-lg"
           />
         </div>
 

@@ -52,15 +52,29 @@ const blogPosts = [
     description: "A much needed little break...",
     image: "/art4.jpg",
   },
+  {
+    id: 8,
+    title: "Somewhere out in the Atlantic...",
+    date: "May 03, 2022",
+    description: "A much needed little break...",
+    image: "/art4.jpg",
+  },
+  {
+    id: 9,
+    title: "Somewhere out in the Atlantic...",
+    date: "May 03, 2022",
+    description: "A much needed little break...",
+    image: "/art4.jpg",
+  },
 ];
 
 function page() {
   return (
-    <div className="bg-white min-h-screen py-16 px-6">
+    <div className="bg-white min-h-screen py-28 px-6">
       
       {/* Page Title */}
-      <h1 className="text-center text-5xl italic font-bold text-gray-800 mb-16">
-        Blog
+      <h1 className="text-center text-5xl italic font-bold text-gray-800 mb-16 uppercase">
+        Blogs
       </h1>
 
       {/* Blog Posts Grid */}

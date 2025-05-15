@@ -6,7 +6,7 @@ function page() {
     <div className="bg-white min-h-screen">
       
       {/* Top Banner */}
-      <div className="relative w-full h-80">
+      <div className="relative w-full h-96">
         <img
           src="/art2.jpg"
           alt="FAQ Banner"
@@ -14,7 +14,7 @@ function page() {
         />
         <div className="absolute inset-0 flex justify-center items-center">
           <h1 className="text-4xl md:text-6xl text-center text-white font-bold italic">
-            Frequently Asked Questions
+            Media
           </h1>
         </div>
       </div>
