@@ -1,6 +1,13 @@
 "use client";
 
 import React, { useState } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, EffectFade } from "swiper/modules";
+
+import "swiper/css";
+import "swiper/css/pagination";
+
+const images = ["/art3.jpg", "/art2.jpg", "/art4.jpg"]; // Add more images as needed
 
 const Hero = () => {
   const [showCopyright, setShowCopyright] = useState(false);
@@ -10,21 +17,31 @@ const Hero = () => {
     e.preventDefault();
     setPosition({ x: e.clientX, y: e.clientY });
     setShowCopyright(true);
-
-    setTimeout(() => {
-      setShowCopyright(false);
-    }, 1000); // You had 500ms, I bumped it slightly for better UX
+    setTimeout(() => setShowCopyright(false), 1000);
   };
 
   return (
-    <section className="h-screen relative flex items-center justify-center md:mx-10">
-      {/* Only this div triggers right-click message */}
-      <div
-        className="absolute inset-0 bg-cover bg-center z-0"
-        style={{ backgroundImage: "url('/art3.jpg')" }}
-        onContextMenu={handleContextMenu}
-        onDragStart={(e) => e.preventDefault()}
-      ></div>
+    <section className=" h-screen w-full overflow-hidden">
+      {/* Swiper Carousel */}
+      <Swiper
+        modules={[Autoplay, EffectFade]}
+        spaceBetween={0}
+        slidesPerView={1}
+        loop={true}
+        autoplay={{ delay: 3000 }}
+        className="h-full w-full"
+      >
+        {images.map((src, index) => (
+          <SwiperSlide key={index}>
+            <div
+              className="h-screen bg-cover bg-center"
+              style={{ backgroundImage: `url(${src})` }}
+              onContextMenu={handleContextMenu}
+              onDragStart={(e) => e.preventDefault()}
+            />
+          </SwiperSlide>
+        ))}
+      </Swiper>
 
       {/* Copyright Message */}
       {showCopyright && (

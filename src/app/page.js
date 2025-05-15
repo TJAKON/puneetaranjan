@@ -29,8 +29,8 @@ export default function Home() {
       </section> */}
 
       {/* Featured Artwork */}
-      <section className="grid grid-cols-1 md:grid-cols-2 gap-10 px-6 py-20 md:mx-10 bg-[#0a1f3d] text-neutral-100">
-        {/* Left Image Block */}
+      {/* <section className="grid grid-cols-1 md:grid-cols-2 gap-10 px-6 py-20 md:mx-10 bg-[#0a1f3d] text-neutral-100">
+
         <div className="relative w-full h-[500px] overflow-hidden shadow-lg group">
           <Image
             src="/art1.jpg"
@@ -39,11 +39,11 @@ export default function Home() {
             objectFit="cover"
             className="transition-transform duration-500 group-hover:scale-105"
           />
-          {/* Optional overlay */}
+          
           <div className="absolute inset-0 bg-black/30 group-hover:bg-black/10 transition-all duration-300 rounded-xl"></div>
         </div>
 
-        {/* Right Text Content */}
+       
         <div className="flex flex-col justify-center items-start text-left">
           <h2 className="text-3xl font-semibold text-yellow-300 mb-4 tracking-tight">
             Puneeta Ranjan
@@ -89,13 +89,12 @@ export default function Home() {
             </svg>
           </Link>
         </div>
-      </section>
+      </section> */}
 
-      <section className="grid grid-cols-1 md:grid-cols-2 gap-10 px-6 py-16 bg-white text-neutral-900 max-w-7xl mx-auto">
-        {/* Commission Section */}
+      {/* <section className="grid grid-cols-1 md:grid-cols-2 gap-10 px-6 py-16 bg-white text-neutral-900 max-w-7xl mx-auto">
         <div className="flex flex-col items-start text-left">
           <Image
-            src="/art4.jpg" // Replace with your actual image path
+            src="/art4.jpg" 
             alt="Commission Art"
             width={600}
             height={0}
@@ -112,10 +111,10 @@ export default function Home() {
           </button>
         </div>
 
-        {/* New Work Section */}
+
         <div className="flex flex-col items-start text-left">
           <Image
-            src="/art2.jpg" // Replace with your actual image path
+            src="/art2.jpg" 
             alt="Hydrangeas Art"
             width={600}
             height={0}
@@ -131,10 +130,10 @@ export default function Home() {
             <span className="text-xl">→</span>
           </button>
         </div>
-        {/* Art Workshop Section */}
+       
         <div className="flex flex-col items-start text-left">
           <Image
-            src="/art5.jpg" // Replace with your actual image
+            src="/art5.jpg" 
             alt="Art Workshop"
             width={600}
             height={0}
@@ -151,10 +150,10 @@ export default function Home() {
           </button>
         </div>
 
-        {/* Featured Collection Section */}
+      
         <div className="flex flex-col items-start text-left">
           <Image
-            src="/art3.jpg" // Replace with your actual image
+            src="/art3.jpg"
             alt="Nature Collection"
             width={600}
             height={0}
@@ -172,7 +171,7 @@ export default function Home() {
             <span className="text-xl">→</span>
           </button>
         </div>
-      </section>
+      </section> */}
 
       {/* Gallery Section */}
       {/* <section className="grid md:grid-cols-3 gap-8 px-6 py-16 max-w-7xl mx-auto">
@@ -259,13 +258,13 @@ export default function Home() {
       </div>
 
       {/* Elegant Youth Workshop Section */}
-      <section className="relative px-6 py-24 bg-[#fdfbf7] overflow-hidden md:mx-10">
-        {/* Decorative Strokes */}
+      {/* <section className="relative px-6 py-24 bg-[#fdfbf7] overflow-hidden md:mx-10">
+      
         <div className="absolute top-0 left-0 w-24 h-24 border-t-4 border-l-4 border-yellow-500 rounded-tr-3xl"></div>
         <div className="absolute bottom-0 right-0 w-24 h-24 border-b-4 border-r-4 border-yellow-500 rounded-bl-3xl"></div>
 
         <div className="grid md:grid-cols-2 gap-12 items-center relative z-5">
-          {/* Text Content */}
+         
           <div className="space-y-6">
             <h2 className="text-4xl font-semibold tracking-tight text-gray-900 leading-snug">
               Unleash Creative Potential in{" "}
@@ -292,37 +291,35 @@ export default function Home() {
             </Link>
           </div>
 
-          {/* Image Section */}
+      
           <div className="relative w-full h-[420px] shadow-xl overflow-hidden">
             <Image
               src="/art4.jpg"
               alt="Creative Youth Workshop"
               fill
-              // width={600}
+            
               height={0}
               className="object-cover hover:scale-105 transition-transform duration-500"
             />
-            {/* Artistic overlay stroke */}
+        
             <div className="absolute -top-3 -left-3 w-full h-full border-4 border-dashed border-yellow-500 rounded-lg pointer-events-none z-10"></div>
           </div>
         </div>
-      </section>
+      </section> */}
 
-      <AboutSection />
+      {/* <AboutSection /> */}
 
       {/* Events Section */}
       {/* Events Section */}
-      <section className="relative bg-white py-20 px-6 mx-auto overflow-hidden md:mx-10">
+      {/* <section className="relative bg-white py-20 px-6 mx-auto overflow-hidden md:mx-10">
         <h2 className="text-2xl font-light mb-12">Upcoming Events</h2>
 
-        {/* Blinking background crosses */}
         <div className="absolute inset-0 -z-10">
           <div className="absolute top-10 left-10 w-3 h-3 border border-yellow-500 rotate-45 blink-slow"></div>
           <div className="absolute bottom-10 right-10 w-3 h-3 border border-yellow-500 rotate-45 blink-slow"></div>
           <div className="absolute top-1/2 left-1/3 w-2 h-2 border border-yellow-400 rotate-45 blink-slow"></div>
         </div>
 
-        {/* Events list */}
         <ul className="flex flex-col md:flex-row justify-between gap-8 text-sm text-gray-700">
           <li className="flex-1">
             <h4 className="text-yellow-700 font-semibold mb-1">→ Paris</h4>
@@ -355,7 +352,7 @@ export default function Home() {
             </p>
           </li>
         </ul>
-      </section>
+      </section> */}
 
       {/* <footer
         className="relative h-[60vh] bg-fixed bg-center bg-cover text-white flex items-center justify-center"

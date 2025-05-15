@@ -3,7 +3,7 @@ import React from "react";
 
 function page() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-white to-gray-100 py-16 px-6 md:px-16">
+    <div className="min-h-screen bg-gradient-to-b from-white to-gray-100 py-28 px-6 md:px-16">
       {/* Main Section */}
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
         {/* Left Side */}
@@ -78,7 +78,7 @@ function page() {
         <div className="flex justify-center">
           <div className="overflow-hidden shadow-lg">
             <img
-              src="/art1.jpg"
+              src="/images/image0.jpeg"
               alt="Artwork"
               className="w-full h-full object-cover hover:scale-105 transition duration-300"
             />

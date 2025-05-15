@@ -7,40 +7,82 @@ function page() {
       {/* Top Banner */}
       <div className="relative w-full h-96">
         <img
-          src="/art2.jpg"
+          src="/images/image11.jpeg"
           alt="Art Commissions Banner"
           className="w-full h-full object-cover brightness-75"
         />
         <div className="absolute inset-0 flex justify-center items-center">
           <h1 className="text-5xl md:text-7xl text-white font-extrabold italic tracking-wide drop-shadow-lg">
-            Art Commissions
+            Portfolio
           </h1>
         </div>
       </div>
 
-      {/* Art Gallery */}
-      <section className="max-w-7xl mx-auto py-20 px-6 grid gap-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
-        {/* Example art images */}
-        {[
-          "art1.jpg",
-          "art2.jpg",
-          "art3.jpg",
-          "art4.jpg",
-          "art5.jpg",
-          "art2.jpg",
-        ].map((img, index) => (
-          <div
-            key={index}
-            className="overflow-hidden shadow-md group"
-          >
-            <img
-              src={`/${img}`}
-              alt={`Artwork ${index + 1}`}
-              className="object-cover w-full h-full transform group-hover:scale-105 transition duration-300"
-            />
-          </div>
-        ))}
-      </section>
+    {/* Art Gallery */}
+<section className="max-w-7xl mx-auto py-20 px-6 grid gap-12 grid-cols-1 sm:grid-cols-2 md:grid-cols-2">
+  {[
+    {
+      img: "art1.jpg",
+      title: "Whispers of Light",
+      style: "Acrylic on Canvas",
+      size: "24 x 36 in",
+      description: "A serene depiction of dawn breaking through quiet hills.",
+    },
+    {
+      img: "art2.jpg",
+      title: "Eternal Bloom",
+      style: "Watercolor",
+      size: "18 x 24 in",
+      description: "A vibrant expression of nature’s endless beauty.",
+    },
+    {
+      img: "art3.jpg",
+      title: "Urban Echoes",
+      style: "Mixed Media",
+      size: "30 x 40 in",
+      description: "Captures the dynamic pulse of city life through texture and tone.",
+    },
+    {
+      img: "art4.jpg",
+      title: "Silent Depths",
+      style: "Oil on Canvas",
+      size: "20 x 30 in",
+      description: "A moody introspective piece evoking deep reflection.",
+    },
+    {
+      img: "art5.jpg",
+      title: "Garden Dreams",
+      style: "Ink and Watercolor",
+      size: "16 x 20 in",
+      description: "Delicate florals flow with soft storytelling and elegance.",
+    },
+    {
+      img: "art2.jpg",
+      title: "Hydrangeas Bloom",
+      style: "Watercolor",
+      size: "18 x 24 in",
+      description: "A colorful celebration of seasonal floral vibrance.",
+    },
+  ].map((art, index) => (
+    <div
+      key={index}
+      className="bg-white border overflow-hidden shadow-lg transition-transform duration-300 group hover:shadow-xl"
+    >
+      <img
+        src={`/${art.img}`}
+        alt={art.title}
+        className="object-cover w-full h-96 group-hover:scale-105 transition-transform duration-300"
+      />
+      <div className="p-5">
+        <h3 className="text-lg font-semibold text-gray-800 mb-1">{art.title}</h3>
+        <p className="text-sm text-gray-600 mb-1"><span className="font-medium">Style:</span> {art.style}</p>
+        <p className="text-sm text-gray-600 mb-1"><span className="font-medium">Size:</span> {art.size}</p>
+        <p className="text-sm text-gray-600 mt-2">{art.description}</p>
+      </div>
+    </div>
+  ))}
+</section>
+
 
       {/* Testimonial */}
       <section className="max-w-5xl mx-auto py-20 px-6 text-center">
@@ -73,8 +115,8 @@ function page() {
       </section>
 
       {/* FAQ Section */}
-      <section className="max-w-6xl mx-auto py-20 px-6 grid grid-cols-1 md:grid-cols-2 gap-16">
-        {/* Left Side */}
+      {/* <section className="max-w-6xl mx-auto py-20 px-6 grid grid-cols-1 md:grid-cols-2 gap-16">
+    
         <div className="space-y-10">
           <div>
             <h3 className="text-3xl font-bold mb-4 text-gray-900">
@@ -112,7 +154,7 @@ function page() {
           </div>
         </div>
 
-        {/* Right Side */}
+  
         <div className="space-y-10">
           <div>
             <h3 className="text-3xl font-bold mb-4 text-gray-900">
@@ -141,7 +183,7 @@ function page() {
             </p>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Newsletter Signup */}
       <section className="max-w-4xl mx-auto py-20 px-6 text-center">
