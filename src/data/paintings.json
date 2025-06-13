@@ -1,0 +1,58 @@
+{
+  "oilPaintings": [
+    {
+      "slug": "whispers-of-light",
+      "title": "Whispers of Light",
+      "image": "/art1.jpg",
+      "style": "Acrylic on Canvas",
+      "size": "24 x 36 in",
+      "year": "2022",
+      "description": "A serene depiction of dawn breaking through quiet hills."
+    },
+    {
+      "slug": "eternal-bloom",
+      "title": "Eternal Bloom",
+      "image": "/art2.jpg",
+      "style": "Watercolor",
+      "size": "18 x 24 in",
+      "year": "2023",
+      "description": "A vibrant expression of nature’s endless beauty."
+    },
+    {
+      "slug": "urban-echoes",
+      "title": "Urban Echoes",
+      "image": "/art3.jpg",
+      "style": "Mixed Media",
+      "size": "30 x 40 in",
+      "year": "2023",
+      "description": "Captures the dynamic pulse of city life through texture and tone."
+    },
+    {
+      "slug": "silent-depths",
+      "title": "Silent Depths",
+      "image": "/art4.jpg",
+      "style": "Oil on Canvas",
+      "size": "20 x 30 in",
+      "year": "2021",
+      "description": "A moody introspective piece evoking deep reflection."
+    },
+    {
+      "slug": "garden-dreams",
+      "title": "Garden Dreams",
+      "image": "/art5.jpg",
+      "style": "Ink and Watercolor",
+      "size": "16 x 20 in",
+      "year": "2022",
+      "description": "Delicate florals flow with soft storytelling and elegance."
+    },
+    {
+      "slug": "hydrangeas-bloom",
+      "title": "Hydrangeas Bloom",
+      "image": "/art2.jpg",
+      "style": "Watercolor",
+      "size": "18 x 24 in",
+      "year": "2023",
+      "description": "A colorful celebration of seasonal floral vibrance."
+    }
+  ]
+}

@@ -1,5 +1,58 @@
 "use client";
 import React from "react";
+import Link from "next/link";
+
+const paintings = [
+  {
+    slug: "whispers-of-light",
+    img: "art1.jpg",
+    title: "Whispers of Light",
+    style: "Acrylic on Canvas",
+    size: "24 x 36 in",
+    description: "A serene depiction of dawn breaking through quiet hills.",
+  },
+  {
+    slug: "eternal-bloom",
+    img: "art2.jpg",
+    title: "Eternal Bloom",
+    style: "Watercolor",
+    size: "18 x 24 in",
+    description: "A vibrant expression of nature’s endless beauty.",
+  },
+  {
+    slug: "urban-echoes",
+    img: "art3.jpg",
+    title: "Urban Echoes",
+    style: "Mixed Media",
+    size: "30 x 40 in",
+    description:
+      "Captures the dynamic pulse of city life through texture and tone.",
+  },
+  {
+    slug: "silent-depths",
+    img: "art4.jpg",
+    title: "Silent Depths",
+    style: "Oil on Canvas",
+    size: "20 x 30 in",
+    description: "A moody introspective piece evoking deep reflection.",
+  },
+  {
+    slug: "garden-dreams",
+    img: "art5.jpg",
+    title: "Garden Dreams",
+    style: "Ink and Watercolor",
+    size: "16 x 20 in",
+    description: "Delicate florals flow with soft storytelling and elegance.",
+  },
+  {
+    slug: "hydrangeas-bloom",
+    img: "art2.jpg",
+    title: "Hydrangeas Bloom",
+    style: "Watercolor",
+    size: "18 x 24 in",
+    description: "A colorful celebration of seasonal floral vibrance.",
+  },
+];
 
 function page() {
   return (
@@ -20,7 +73,7 @@ function page() {
 
       {/* Art Gallery */}
       <section className="max-w-7xl mx-auto py-20 px-6 grid gap-12 grid-cols-1 sm:grid-cols-2 md:grid-cols-2">
-        {[
+        {/* {[
           {
             img: "art1.jpg",
             title: "Whispers of Light",
@@ -89,6 +142,30 @@ function page() {
               <p className="text-sm text-gray-600 mt-2">{art.description}</p>
             </div>
           </div>
+        ))} */}
+
+        {paintings.map((art, index) => (
+          <Link key={index} href={`/pages/product/${art.slug}`}>
+            <div className="bg-white border overflow-hidden shadow-lg group hover:shadow-xl transition">
+              <img
+                src={`/${art.img}`}
+                alt={art.title}
+                className="object-cover w-full h-96 group-hover:scale-105 transition-transform duration-300"
+              />
+              <div className="p-5">
+                <h3 className="text-lg font-semibold text-gray-800 mb-1">
+                  {art.title}
+                </h3>
+                <p className="text-sm text-gray-600 mb-1">
+                  <strong>Style:</strong> {art.style}
+                </p>
+                <p className="text-sm text-gray-600 mb-1">
+                  <strong>Size:</strong> {art.size}
+                </p>
+                <p className="text-sm text-gray-600 mt-2">{art.description}</p>
+              </div>
+            </div>
+          </Link>
         ))}
       </section>
 
